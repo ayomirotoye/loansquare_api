@@ -123,31 +123,4 @@ loanRouter.delete('/:id', async (req, res) => {
     }
 });
 
-
-// loanRouter.post('/apply/1', (req, res, next)=>{
-//     var loanDetails = req.body;
-//     try {
-//         loanService.provideLoanToUser(loanDb, loanDetails).then((result) => {
-//             res.send("");
-//         }, function (err) {
-//             res.status(500).json({ "message": err.message });
-//         });
-//     } catch (err) {
-//         res.status(500).json({ "message": err.message })
-//     }
-// });
-
-// loanRouter.get('/:userId/users', (req, res, next)=>{
-//     var userId = req.params.userId;
-//     try {
-//         loanService.getLoanByUserId(userLoanDb, userId).then((result) => {
-//             res.send("");
-//         }, function (err) {
-//             res.status(500).json({ "message": err.message });
-//         });
-//     } catch (err) {
-//         res.status(500).json({ "message": err.message })
-//     }
-// });
-
 module.exports = loanRouter;

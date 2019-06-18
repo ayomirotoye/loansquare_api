@@ -63,31 +63,8 @@ function updateLoan(loanDb, newLoanDetails, reqId){
     });  
 }
 
-// function provideLoanToUser(loanDb, newLoanDetails){
-//     var reqUserId = newLoanDetails.userId;
-
-//     return new Promise( function (resolve, reject) {
-//         userLoanDb.find({userId: reqUserId}, function (err, docs) {
-//             if (err) {
-//                 reject(err);
-//             }else if(docs.length == 0){
-//                 userLoanDb.insert(newLoanDetails, function (err, docs) {
-//                     if (err) {
-//                         reject(err);
-//                     }else{
-//                         console.log("userLoan has been created");
-//                         resolve(docs);
-//                     }
-//                 });
-//             }
-//         });
-//     });  
-// }
-
-
 module.exports.getLoan = getLoan;
 module.exports.getLoans =  getLoans;
 module.exports.removeLoan =  removeLoan;
 module.exports.createNewLoan =  createNewLoan;
 module.exports.updateLoan =  updateLoan;
-// module.exports.provideLoanToUser =  provideLoanToUser;

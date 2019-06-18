@@ -36,43 +36,28 @@ function provideLoanToUser(userLoanDb, newLoanDetails) {
                 var canUserApply = true;
                 var countWhereDateIsLess = 0;
                 for (let i = 0; i < docs.length; i++) {
-                    console.log(">>>>>>>>>>>>>>!!!!!!!!!:", i);
                     currUserLoan = docs[i];
                     let existingLoanDate = currUserLoan.endDate;
                     let newLoanApplicationDate = newLoanDetails.applicationDate;
 
-                    console.log("existing loan date:", existingLoanDate);
-                    console.log("new loan date:", newLoanApplicationDate);
-
                     var dateComparison = dateUtil.compareDates(existingLoanDate, newLoanApplicationDate);
-                    console.log("dATE COMPARISON:", dateComparison);
                     //If existing loan date is greater than new application Date
                     if (dateComparison == "1") {
                         canUserApply = false;
-                        console.log("you have a current loan running");
-                        // resolve(docs);
                     } else if (dateComparison == "2") {//if existing loan date is before application date
                         countWhereDateIsLess += 1;
-                        console.log(">>>>>>>>>>application Date is greater her<<<<<<<<<<<<");
-                        // resolve(docs);
                     } else if (dateComparison == "0") {// if existing loan date is equal to new application date
                         console.log("your loan expires todaypay up to be able to apply! ");
-                        // resolve(docs);
                     } else {
                         console.log("Invalid dates");
-                        // resolve(docs);
                     }
                 }
-                console.log("canuserApply", canUserApply);
-                console.log("countWhereDateIsLess", countWhereDateIsLess);
                 if (canUserApply) {
                     newLoanDetails.userLoanId = stringUtils.randomString();
                     userLoanDb.insert(newLoanDetails, function (err, docs) {
                         if (err) {
                             reject(err);
                         } else {
-                            console.log("userLoan has been created");
-                            console.log(newLoanDetails);
                             resolve(docs);
                         }
                     });

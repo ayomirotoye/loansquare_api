@@ -49,8 +49,6 @@ userLoanRouter.post('/', (req, res, next) => {
     let newLoanApplicationDate = loanDetails.applicationDate;
 
     var dateComparison = dateUtil.validateDate(newLoanApplicationDate);
-    console.log("dATE COMPARISON:", dateComparison);
-
     if(!dateComparison ){
         res.status(400).json({ "responseCode": "02", "description": "invalid date"});
         return;
@@ -73,7 +71,6 @@ userLoanRouter.post('/', (req, res, next) => {
 //Update loans details
 userLoanRouter.put('/:id', async (req, res) => {
     getLoanById(req.params.id).then((loanDetails) => {
-        // console.log(loanDetails);
         res.status(200).json(loanDetails);
     }, function (err) {
         res.status(404).json({ "message": err.message })

@@ -17,7 +17,7 @@ authenticationRouter.post('/', (req, res) => {
             check: true
         };
         var token = jwt.sign(payload, apiSecret, {
-            expiresIn: 1440 // expires in 24 hours
+            expiresIn: 1440
         });
 
         res.json({

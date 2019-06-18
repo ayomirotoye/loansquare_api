@@ -49,7 +49,6 @@ function removeUser(userDb, userId){
 // user login
 function userLogin(userDb, loginDetails){
     return new Promise( function (resolve, reject) {
-        console.log("loginDetails", loginDetails);
         userDb.find(loginDetails, function (err, docs) {
             if (err) {
                 reject(err);
