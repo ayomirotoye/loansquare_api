@@ -1,0 +1,99 @@
+###Get all users
+GET http://localhost:3002/v1/users
+Content-Type: application/octet-stream
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODU2NDIwLCJleHAiOjE1NjA4NTc4NjB9.yhqOh-fycfrCxigDk2FD8FZ8GvAdGpvDeOwFLe7-zII
+
+###Get all loans
+GET http://localhost:3002/v1/loans
+Content-Type: application/octet-stream
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODU2NDIwLCJleHAiOjE1NjA4NTc4NjB9.yhqOh-fycfrCxigDk2FD8FZ8GvAdGpvDeOwFLe7-zII
+
+
+### Get user by userId
+GET http://localhost:3002/users/EFCqEtzh
+
+### Get loan by loanId
+GET http://localhost:3002/loans/suC3JPuB
+Content-Type: application/json
+
+
+### Create new loan
+POST  http://localhost:3002/loans/
+Content-Type: application/json
+
+{
+    "name": "kia kia",
+    "description": "Easy small loans",
+    "interestRate": 5,
+    "amount": 5000,
+    "tenure": 3
+}
+
+### Create new user
+POST  http://localhost:3002/v1/users/
+Content-Type: application/json
+
+{
+   "firstName": "Bisi",
+    "lastName": "Nnadozie",
+    "userName": "adebisi@gmail.com",
+    "phoneNumber": "08065057496",
+    "password": "12345",
+    "userRole": 1
+}
+
+### user login
+POST  http://localhost:3002/v1/users/login
+Content-Type: application/json
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODU2NDIwLCJleHAiOjE1NjA4NTc4NjB9.yhqOh-fycfrCxigDk2FD8FZ8GvAdGpvDeOwFLe7-zII
+
+{
+    "userName": "adebisi@gmail.com",
+    "password": "123456"
+}
+
+
+### delete loan by id
+DELETE http://localhost:3002/v1/loans/77Zf7NLS
+Content-Type: application/json
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODY0Mjk4LCJleHAiOjE1NjA4NjU3Mzh9.6O0J3B56L-IXgBh8g9nPcEEWXW4en338mRp38sFZm14
+
+### update loan by loanId
+PUT http://localhost:3002/loans/O0U8KMb5
+Content-Type: application/json
+
+{
+    "loanId": "rlERAknc",
+    "name": "renni monie",
+    "description": "Salary earners discounted loan",
+    "interestRate": 3,
+    "amount": 50000,
+    "tenure": 18
+  }
+
+### 
+GET http://localhost:3002/user_loans/
+
+
+### Create new user loans
+POST http://localhost:3002/v1/user_loans/
+Content-Type: application/json
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODY0Mjk4LCJleHAiOjE1NjA4NjU3Mzh9.6O0J3B56L-IXgBh8g9nPcEEWXW4en338mRp38sFZm14
+
+{
+    "userId":"12345",
+    "applicationDate": "2019-06-28",
+    "endDate": "2019-06-26"
+}
+### Get all user loans
+
+GET http://localhost:3002/v1/user_loans/
+
+###
+POST http://localhost:3002/api/auth/
+Content-Type: application/json
+
+{
+    "username": "loansquareadmin",
+    "password": "12345678"
+}
