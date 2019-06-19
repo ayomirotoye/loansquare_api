@@ -1,0 +1,398 @@
+{
+	"id": "0615c541-304c-9a12-caab-68c59a06abfe",
+	"name": "Loansquare api",
+	"description": "Loansquare api is an interface for loan management system that allows customers create new profiles and also apply for loans",
+	"order": [
+		"b93357eb-5580-8611-5ee4-9d083d9bb029",
+		"4ada4f84-ae5f-c9de-f09b-5d62a7f20426",
+		"ab3e2a5c-de0d-30aa-c49b-e2418cf42c32",
+		"3deda313-194e-ab85-2f6e-c56ba9f86065",
+		"41165054-2441-ff2a-02b1-668a937bae47",
+		"a8a8a32b-7284-f35f-a19a-b59c25396aa9",
+		"17b535c2-e576-ba94-35ac-a64bd3d76a7b",
+		"73867af8-7506-084d-1cfa-69e24f813b72",
+		"ae0904cc-1485-6d27-110d-f61a1f755962",
+		"81251323-993c-1315-51dd-86d60495cd7d",
+		"8b209eba-086d-87eb-923d-9bd7fc217d7e"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1560862901766,
+	"owner": "4442507",
+	"public": false,
+	"requests": [
+		{
+			"id": "17b535c2-e576-ba94-35ac-a64bd3d76a7b",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3002/v1/loans/77Zf7NLS",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "0615c541-304c-9a12-caab-68c59a06abfe",
+			"data": null,
+			"dataMode": "params",
+			"name": "API to delete a loan type by loanId",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1560865181739,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "3deda313-194e-ab85-2f6e-c56ba9f86065",
+			"headers": "access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODYyNzk2LCJleHAiOjE1NjA4NjQyMzZ9.MvGiUnX13pGiCgFWHSymYeuM039xHPFWmnH8ZNsFF-k\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODYyNzk2LCJleHAiOjE1NjA4NjQyMzZ9.MvGiUnX13pGiCgFWHSymYeuM039xHPFWmnH8ZNsFF-k",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3002/v1/loans/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560863774251,
+			"name": "API to get loans available",
+			"description": "",
+			"collectionId": "0615c541-304c-9a12-caab-68c59a06abfe",
+			"responses": []
+		},
+		{
+			"id": "41165054-2441-ff2a-02b1-668a937bae47",
+			"headers": "access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODYyNzk2LCJleHAiOjE1NjA4NjQyMzZ9.MvGiUnX13pGiCgFWHSymYeuM039xHPFWmnH8ZNsFF-k\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODYyNzk2LCJleHAiOjE1NjA4NjQyMzZ9.MvGiUnX13pGiCgFWHSymYeuM039xHPFWmnH8ZNsFF-k",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3002/v1/loans/77Zf7NLS",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560863997825,
+			"name": "API to get loan available by loanId",
+			"description": "",
+			"collectionId": "0615c541-304c-9a12-caab-68c59a06abfe",
+			"responses": []
+		},
+		{
+			"id": "4ada4f84-ae5f-c9de-f09b-5d62a7f20426",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3002/api/auth",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0615c541-304c-9a12-caab-68c59a06abfe",
+			"data": [],
+			"dataMode": "raw",
+			"name": "API to create access token",
+			"description": "endpoint to create authentication token ",
+			"descriptionFormat": "html",
+			"time": 1560863080932,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"username\": \"loansquareadmin\",\n    \"password\": \"12345678\"\n}"
+		},
+		{
+			"id": "73867af8-7506-084d-1cfa-69e24f813b72",
+			"headers": "access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODY1MTA1LCJleHAiOjE1NjA4NjY1NDV9.mIXx38z5FFNbNOjIpMPMoTWrn_VgqyiTrveJ1PPhqT8\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODY1MTA1LCJleHAiOjE1NjA4NjY1NDV9.mIXx38z5FFNbNOjIpMPMoTWrn_VgqyiTrveJ1PPhqT8",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3002/v1/loans/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0615c541-304c-9a12-caab-68c59a06abfe",
+			"data": [],
+			"dataMode": "raw",
+			"name": "API to create new loan types",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1560867531799,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"name\": \"Ren money\",\n    \"description\": \"Salary earners discounted loan\",\n    \"interestRate\": 3,\n    \"amount\": 50000,\n    \"tenure\": 18\n}"
+		},
+		{
+			"id": "81251323-993c-1315-51dd-86d60495cd7d",
+			"headers": "access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODcwNzk2LCJleHAiOjE1NjA4NzIyMzZ9.gm8iOBE3sUdrKhk6Q_Ci1oychpq8_CXuIanybJmEM7c\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODcwNzk2LCJleHAiOjE1NjA4NzIyMzZ9.gm8iOBE3sUdrKhk6Q_Ci1oychpq8_CXuIanybJmEM7c",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3002/v1/user_loans/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0615c541-304c-9a12-caab-68c59a06abfe",
+			"data": null,
+			"dataMode": "params",
+			"name": "API to get all user loans by userId",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1560870999207,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "8b209eba-086d-87eb-923d-9bd7fc217d7e",
+			"headers": "access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwOTI1MjI2LCJleHAiOjE1NjA5MjY2NjZ9.CRM3senXifhP-aCAiZd9xZY9DNgkm5TVAGAmNC-CiGI\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwOTI1MjI2LCJleHAiOjE1NjA5MjY2NjZ9.CRM3senXifhP-aCAiZd9xZY9DNgkm5TVAGAmNC-CiGI",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3002/v1/users/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0615c541-304c-9a12-caab-68c59a06abfe",
+			"data": [],
+			"dataMode": "raw",
+			"name": "API to login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1560925265399,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"userName\": \"adebisi@gmail.com\",\n    \"password\": \"123456\"\n}"
+		},
+		{
+			"id": "a8a8a32b-7284-f35f-a19a-b59c25396aa9",
+			"headers": "access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODYyNzk2LCJleHAiOjE1NjA4NjQyMzZ9.MvGiUnX13pGiCgFWHSymYeuM039xHPFWmnH8ZNsFF-k\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODYyNzk2LCJleHAiOjE1NjA4NjQyMzZ9.MvGiUnX13pGiCgFWHSymYeuM039xHPFWmnH8ZNsFF-k",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3002/v1/users/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0615c541-304c-9a12-caab-68c59a06abfe",
+			"data": [],
+			"dataMode": "raw",
+			"name": "API to create user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1560864122324,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n   \"firstName\": \"Bisi\",\n    \"lastName\": \"Nnadozie\",\n    \"userName\": \"adebisi@gmail.com\",\n    \"phoneNumber\": \"08065057496\",\n    \"password\": \"12345\",\n    \"userRole\": 1\n}\n"
+		},
+		{
+			"id": "ab3e2a5c-de0d-30aa-c49b-e2418cf42c32",
+			"headers": "access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODYyNzk2LCJleHAiOjE1NjA4NjQyMzZ9.MvGiUnX13pGiCgFWHSymYeuM039xHPFWmnH8ZNsFF-k\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODYyNzk2LCJleHAiOjE1NjA4NjQyMzZ9.MvGiUnX13pGiCgFWHSymYeuM039xHPFWmnH8ZNsFF-k",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": " http://localhost:3002/v1/users/Achalao2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560863985124,
+			"name": "API to get user by UserId",
+			"description": "",
+			"collectionId": "0615c541-304c-9a12-caab-68c59a06abfe",
+			"responses": []
+		},
+		{
+			"id": "ae0904cc-1485-6d27-110d-f61a1f755962",
+			"headers": "access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODY3NjA3LCJleHAiOjE1NjA4NjkwNDd9.xdd1frChcCm2QJ_ysladbeMhoQ4rRFpbK6f5Kem2L-E\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODY3NjA3LCJleHAiOjE1NjA4NjkwNDd9.xdd1frChcCm2QJ_ysladbeMhoQ4rRFpbK6f5Kem2L-E",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3002/v1/user_loans/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0615c541-304c-9a12-caab-68c59a06abfe",
+			"data": null,
+			"dataMode": "params",
+			"name": "API to apply for loans",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1560867692113,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "b93357eb-5580-8611-5ee4-9d083d9bb029",
+			"headers": "access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODYyNzk2LCJleHAiOjE1NjA4NjQyMzZ9.MvGiUnX13pGiCgFWHSymYeuM039xHPFWmnH8ZNsFF-k\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNTYwODYyNzk2LCJleHAiOjE1NjA4NjQyMzZ9.MvGiUnX13pGiCgFWHSymYeuM039xHPFWmnH8ZNsFF-k",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3002/v1/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1560863443170,
+			"name": "API to get all users",
+			"description": "endpoint to get all users on the system",
+			"collectionId": "0615c541-304c-9a12-caab-68c59a06abfe",
+			"responses": []
+		}
+	]
+}
